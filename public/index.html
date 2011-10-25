@@ -104,17 +104,30 @@
 </div>
 
 <p>
-  <img src="images/back.jpg" width="800">
+  <img src="images/front.jpg" width="800">
+  <!-- <img src="images/back.jpg" width="800"> -->
 </p>
 
 <p class="claim">
   A compact storage server &mdash; designed for 24/7-operation in your living room.
 </p>
 
+<h1>The Story</h1>
+
 <p>
-  This easy-to-assemble DIY kit was inspired by the famous 
-  <a href="http://blog.backblaze.com/2009/09/01/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/">Backblaze storage pod</a>.
-  While not offering quite as much storage capacity, the Evercube runs almost silently and draws very little power.
+  When I came across the famous
+  <a href="http://blog.backblaze.com/2009/09/01/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/">Backblaze storage pod</a>, 
+  I was immediately intrigued by its clever, no-frills design. 
+  But who really needs 67 terabytes 
+  (or rather <a href="http://blog.backblaze.com/2011/07/20/petabytes-on-a-budget-v2-0revealing-more-secrets/">135 TB</a>, with current disks) 
+  at home?
+  I decided to "downscale" their excellent hardware design for home use, and after a long time of experimenting, 
+  the Evercube is the result.
+</p>  
+  
+<p>  
+  The Evercube design is open hardware, available under a Creative Commons license. 
+  But for your convenience, I am also offering the Evercube as a Do-It-Yourself kit.
 </p>
 
 
@@ -128,7 +141,7 @@
   </tr>
   <tr>
     <th>material</th>
-    <td>brushed stainless steel, 2 mm</td>
+    <td>stainless steel, brushed, 2 mm</td>
   </tr>
   <tr>
     <th>processor</th>
@@ -156,32 +169,10 @@
   </tr>
   <tr>
     <th>price</th>
-    <td>€ 429</td>
+    <td>€ 429 <i>(including 19% VAT)</i></td>
   </tr>
 </table>  
             
-
-
-<!-- <h2>Images</h2>
-
-<table class="gallery">
-  <tr>
-    <td>
-      <a href="images/shot3.800.jpg" rel="lightbox[shots]"><img src="images/shot3.400.jpg" width="400" height="319" alt="Evercube" /></a>
-    </td>
-    <td>
-      <a href="images/shot2.800.jpg" rel="lightbox[shots]"><img src="images/shot2.400.jpg" width="400" height="319" alt="Evercube" /></a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="images/shot1.800.jpg" rel="lightbox[shots]"><img src="images/shot1.400.jpg" width="400" height="319" alt="Evercube" /></a>
-    </td>
-    <td>
-      <a href="images/shot4.800.jpg" rel="lightbox[shots]"><img src="images/shot4.400.jpg" width="400" height="319" alt="Evercube" /></a>
-    </td>
-  </tr>
-</table>   -->
 
 
 
@@ -218,9 +209,10 @@
 <dl>
 
 <dt>What is included in the kit?</dt>
-<dd>It contains everything thas is needed &mdash; except <i>harddisks</i> &mdash; to build the Evercube:
+<dd>
+  The kit contains everything &mdash; minus <b>harddisks</b> &mdash; that is needed to build the Evercube:
   enclosure, motherboard (with CPU and memory), SATA backplane, disk scaffold, fan, power supply, 
-  wires, screws, nylon washers ... 
+  wires, screws, nuts, washers ... 
 </dd>
 
 <dt>How difficult is it to put together?</dt>
@@ -236,7 +228,7 @@
 
 <dt>What tools do I need?</dt>
 <dd>
-  Screwdrivers, pliers.
+  Only screwdrivers and pliers.
 </dd>
 
 </dl>
@@ -247,23 +239,34 @@
 <h2>Technical</h2>
 <dl>
 
-<dt>What operating system does the Evercube use?</dt>
-<dd>
-  The Sheeva Plug (which is used as motherboard) comes with Ubuntu 09.04 pre-installed on flash.
-</dd>
-
-<!-- <dt>How about ZFS?</dt>
-<dd>
-</dd> -->
-
 <dt>Which disks can be used?</dt>
 <dd>
-  Any laptop (= 2.5" SATA) disk, including "thick" (12.5mm) disks like some 1 TB models.
+  Any laptop (2.5" SATA) disk, including "thick" (12.5mm) 1 TB models.
 </dd>
 
-<!-- <dt>Why laptop disks in a server?</dt>
+<dt>Seriously &mdash; laptop disks in a server?</dt>
 <dd>
-</dd> -->
+  It might sound counterintuitive, but laptop disks actually have a lot of advantages
+  for an always-on home server: they use less energy, run very quiet, and take up little space.
+  Although you pay roughly double the price per gigabyte compared to 3.5" models, 
+  you pay less for electricity, thus save money in the long run.
+
+</dd>
+
+<dt>What operating system does the Evercube run on?</dt>
+<dd>
+  The Sheeva Plug (which we use as motherboard) comes with Ubuntu 09.04 pre-installed on flash.  
+  You can find instructions on <a href="http://www.plugcomputer.org/plugwiki/index.php/Main_Page">plugcomputer.org</a>
+  how to install a different operating system (including Debian, Fedora, Gentoo and FreeBSD).
+</dd>
+
+<dt>How about ZFS?</dt>
+<dd>
+  Sure, ZFS would be ideal for a file server &mdash; but it is currently not available on Linux due to licensing issues.
+  You can install FreeBSD on the Evercube, although the available memory (512 MB) might be too little 
+  for good ZFS performance.
+</dd>
+
 
 </dl>
 
