@@ -109,25 +109,26 @@
 </p>
 
 <p class="claim">
-  A compact storage server &mdash; designed for 24/7-operation in your living room.
+  A compact and stylish storage server &mdash; designed for 24/7-operation in your living room.
 </p>
 
-<h1>The Story</h1>
+<h1>Background</h1>
 
 <p>
   When I came across the famous
   <a href="http://blog.backblaze.com/2009/09/01/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/">Backblaze storage pod</a>, 
   I was immediately intrigued by its clever, no-frills design. 
   But who really needs 67 terabytes 
-  (or rather <a href="http://blog.backblaze.com/2011/07/20/petabytes-on-a-budget-v2-0revealing-more-secrets/">135 TB</a>, with current disks) 
+  (<a href="http://blog.backblaze.com/2011/07/20/petabytes-on-a-budget-v2-0revealing-more-secrets/">or even 135</a>)
   at home?
-  I decided to "downscale" their excellent hardware design for home use, and after a long time of experimenting, 
-  the Evercube is the result.
+  I decided to "downscale" their excellent hardware design for home use, and after a long period of experimentation, 
+  the Evercube is the final result.
 </p>  
   
 <p>  
-  The Evercube design is open hardware, available under a Creative Commons license. 
-  But for your convenience, I am also offering the Evercube as a Do-It-Yourself kit.
+  The design is open hardware, available under a Creative Commons license. 
+  But for your convenience, I am also offering all components needed to build 
+  the Evercube as a Do-It-Yourself kit.
 </p>
 
 
@@ -145,7 +146,7 @@
   </tr>
   <tr>
     <th>processor</th>
-    <td>Marvell Sheeva, single core, 1.2 Ghz</td>
+    <td>Marvell "Kirkwood", single core, 1.2 Ghz</td>
   </tr>
   <tr>
     <th>memory</th>
@@ -168,8 +169,8 @@
     <td>ultra-silent fan, 140 mm</td>
   </tr>
   <tr>
-    <th>price</th>
-    <td>€ 429 <i>(including 19% VAT)</i></td>
+    <th>kit price</th>
+    <td>€ 429 &mdash; includes 19% VAT</td>
   </tr>
 </table>  
             
@@ -182,24 +183,29 @@
 <h2>General</h2>
 <dl>
 
-<dt>What can I use it for?</dt>
+<dt>What is it suited for?</dt>
 <dd>
   The Evercube is primarily intended as an "always-on" home server.
   5 terabytes of raw storage capacity make it a superb file server
   with plenty of room for pictures, music, movies or backups. 
-  Of course it can also be used as a web server, bittorrent server,
-  diaspora node ...  
+  Of course it can also be used as a web server, bittorrent server 
+  ... or to host your personal <a href="https://joindiaspora.com/">diaspora</a> node?
 </dd>
 
 <dt>When is the kit available?</dt>
 <dd>
-  The first ten kits will be ready for delivery in November 2011.
+  The first batch (ten kits) will be ready for delivery in mid-November 2011.
+  The second batch (another twenty) will probably be ready a few weeks later.
+  So <a href="mailto:tim@lossenlabs.com?subject=evercube">pre-order now</a> if you want to be sure to receive your kit 
+  before Christmas!
 </dd>
 </dl>
 
-<!-- <dt>Are you based in Belgium?</dt>
+<dt>So you live in Belgium?</dt>
 <dd>
-</dd> -->
+  Nope, <a href="http://tim.lossen.de">I am german</a> and live in Berlin &mdash; I just couldn't resist the cool domain hack.
+  All custom components (like the stainless steel chassis) are manufactured in Germany.
+</dd>
 
 </dl>
 
@@ -210,20 +216,17 @@
 
 <dt>What is included in the kit?</dt>
 <dd>
-  The kit contains everything &mdash; minus <b>harddisks</b> &mdash; that is needed to build the Evercube:
-  enclosure, motherboard (with CPU and memory), SATA backplane, disk scaffold, fan, power supply, 
-  wires, screws, nuts, washers ... 
+  The kit contains everything &mdash; except <b>harddisks</b> &mdash; that is needed to build the Evercube:
+  enclosure, motherboard (with onboard CPU and memory), SATA backplane, internal disk scaffold, ultra-silent fan, 
+  power supply, wires, clamps, screws, nuts, washers ... 
 </dd>
 
 <dt>How difficult is it to put together?</dt>
 <dd>
   Pretty easy, actually. If you know how to operate a screwdriver, you should be fine ;)
-</dd>
-
-<dt>Do I have to solder anything?</dt>
-<dd>
-  No, to make this project as accessible as possible, all electrical 
-  connections are done with clamps.
+  Special care has been taken to make assembly as simple as possible &mdash; all
+  electrical connections are done with clamps, for example, so <b>no soldering 
+  is necessary</b>.
 </dd>
 
 <dt>What tools do I need?</dt>
@@ -241,12 +244,13 @@
 
 <dt>Which disks can be used?</dt>
 <dd>
-  Any laptop (2.5" SATA) disk, including "thick" (12.5mm) 1 TB models.
+  Any 2.5" SATA (= laptop) disk, including "thick" (12.5mm) 1 TB models. You can even use the
+  Evercube without any disks at all, as there is an internal flash boot disk (512 MB).
 </dd>
 
 <dt>Seriously &mdash; laptop disks in a server?</dt>
 <dd>
-  It might sound counterintuitive, but laptop disks actually have a lot of advantages
+  It might sound strange, but laptop disks actually have a lot of advantages
   for an always-on home server: they use less energy, run very quiet, and take up little space.
   Although you pay roughly double the price per gigabyte compared to 3.5" disks, 
   you pay less for electricity, and thus save money in the long run.
@@ -254,23 +258,39 @@
 
 <dt>What operating system does the Evercube run on?</dt>
 <dd>
-  The Sheeva Plug (which we use as motherboard) comes with Ubuntu 09.04 pre-installed on flash.  
+  The <a href="http://en.wikipedia.org/wiki/SheevaPlug">Sheeva Plug</a> (which we use as motherboard) 
+  comes with Ubuntu 09.04 pre-installed on flash.  
   You can find instructions on <a href="http://www.plugcomputer.org/plugwiki/index.php/Main_Page">plugcomputer.org</a>
   how to install a different operating system (including Debian, Fedora, Gentoo and FreeBSD).
 </dd>
 
-<dt>How about ZFS?</dt>
+<dt>What other software is installed?</dt>
 <dd>
-  Sure, ZFS would be ideal for a file server &mdash; but it is currently not available on Linux due to licensing issues.
-  You can install FreeBSD on the Evercube, although the available memory (512 MB) might be too little 
-  for good ZFS performance.
+  Nothing &mdash; just a stock Ubuntu installation, so you can customize the system however you want.
 </dd>
 
+<dt>How about ZFS?</dt>
+<dd>
+  Sure, ZFS would be ideal for a file server &mdash; but it is currently not available on Ubuntu.
+  FreeBSD is an option, although the available memory (512 MB) might turn out to be too little 
+  for good ZFS performance.
+</dd>
 
 </dl>
 
 
 
+<!-- <h2>Ordering</h2>
+<dl>
+
+<dt>I want one! How do I order?</dt>
+<dd>
+  <a href="">
+</dd>
+
+<dt>What are the shipping costs?</dt>
+<dd>
+</dd> -->
 
 <!-- <h2>Vendor</h2>
 Lossen Labs GmbH<br>
@@ -278,13 +298,12 @@ Hohenstaufenstrasse 65<br>
 10781 Berlin<br> -->
 
 
-<div class="button">
-  <a href="mailto:tim@lossenlabs.com?subject=evercube"><img src="images/pre_order_now.png"></a>
+</div>
 </div>
 
-
-</div>
-</div>
+<br/>
+<br/>
+<br/>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
