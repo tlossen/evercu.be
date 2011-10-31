@@ -20,19 +20,6 @@
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' type='text/css'>
 <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
 
-<!-- <script src="js/prototype.js" type="text/javascript"></script>
-<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
-<script src="js/lightbox.js" type="text/javascript"></script> -->
-
-<!-- <script  type="text/javascript">
-  function flip() {
-    window.document.images[1].src = "images/back.jpg";
-  }
-  function flop() {} {
-    window.document.images[1].src = "images/front.jpg";
-  }
-</script> -->
-
 <style>
   body { 
     margin: 50px; 
@@ -94,7 +81,9 @@
     margin-bottom: 15px;
   }
   
-  .button {
+  .paypal {
+    width: 100px;
+    margin: auto;
     margin-top: 30px;
   }
 
@@ -143,9 +132,9 @@
   A sexy little storage server &mdash; designed for 24/7-operation in your living room.
 </p>
 
-<iframe src="http://www.facebook.com/plugins/like.php?href=evercu.be"
-  scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe>
-
+<div>
+  <iframe src="http://www.facebook.com/plugins/like.php?href=evercu.be" scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe>
+</div>
   
 
 
@@ -213,8 +202,6 @@
 </table>  
             
 
-
-
 <h1>Questions & Answers</h1>
 
 
@@ -238,14 +225,6 @@
   ... or to host your personal <a href="https://joindiaspora.com/">diaspora</a> node?
 </dd>
 
-<dt>When is the kit available?</dt>
-<dd>
-  The first batch (ten kits) will be ready for delivery in mid-November 2011.
-  The second batch (another twenty) will probably be ready a few weeks later.
-  So <a href="mailto:tim@lossenlabs.com?subject=evercube">pre-order now</a> if you want to be sure to receive your kit 
-  before Christmas!
-</dd>
-
 <dt>So you live in Belgium?</dt>
 <dd>
   Nope, <a href="http://tim.lossen.de">I am german</a> and live in Berlin &mdash; I just couldn't resist the cool domain hack.
@@ -262,8 +241,8 @@
 <dt>What is included in the kit?</dt>
 <dd>
   The kit contains everything &mdash; except <b>harddisks</b> &mdash; that is needed to build the Evercube:
-  enclosure, motherboard (with onboard CPU and memory), SATA backplane, internal disk scaffold, ultra-silent fan, 
-  power supply, wires, clamps, screws, nuts, washers ... 
+  enclosure, motherboard (with onboard CPU and memory), 5-port SATA multiplexer backplane, 
+  internal disk scaffold, ultra-silent fan, power supply, wires, clamps, screws, nuts, washers ... 
 </dd>
 
 <dt>How difficult is it to put together?</dt>
@@ -271,7 +250,7 @@
   Pretty easy, actually. If you know how to operate a screwdriver, you should be fine ;)
   Special care has been taken to make assembly as simple as possible &mdash; all
   electrical connections are done with clamps, for example, so <b>no soldering 
-  is necessary</b>.
+  is necessary</b>. I'll publish detailed step-by-step instructions soon.
 </dd>
 
 <dt>What tools do I need?</dt>
@@ -321,22 +300,38 @@
 
 </dl>
 
-<!-- <h2>Ordering</h2>
+<h2>Ordering</h2>
 <dl>
 
-<dt>I want one! How do I order?</dt>
+<dt>When is the kit available?</dt>
 <dd>
-  <a href="">
+  The first batch (ten kits) will be ready for delivery in mid-November 2011.
+  The second batch (another twenty) will probably be ready a few weeks later.
+  So <b>order now</b> if you want to be sure to receive your kit before Christmas!
+</dd>
+
+<dt>How do I order?</dt>
+<dd>
+  Pay by clicking the PayPal button below. You will receive an order confirmation by email.
+  I will send out the kit (plus printed invoice) as soon as possible.
 </dd>
 
 <dt>What are the shipping costs?</dt>
 <dd>
-</dd> -->
+  As a special introductory offer, shipping costs (world-wide) <b>are included</b> for the first ten kits sold.
+  After that, I'll update the website with more details.
+</dd>
 
-<!-- <h2>Vendor</h2>
-Lossen Labs GmbH<br>
-Hohenstaufenstrasse 65<br>
-10781 Berlin<br> -->
+</dl>
+
+<div class="paypal">
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="hosted_button_id" value="AAFQ62QSF923N">
+  <input type="image" src="https://www.paypalobjects.com/en_US/DE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+  </form>
+</div>
 
 <div class="footer">
   The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Evercube hardware design</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tim.lossen.de" property="cc:attributionName" rel="cc:attributionURL">Tim Lossen</a> 
