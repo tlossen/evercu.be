@@ -16,102 +16,24 @@
 
 <title>Evercube</title>
 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easy_slider1.7.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#slider").easySlider({
+      auto: true,
+      continuous: true,
+      controlsShow:  false,
+      speed: 800,
+      pause: 3500,
+    });
+  });
+</script>
+
 <link rel="stylesheet" href="css/reset.css" />
 <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' type='text/css'>
-<link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/screen.css" />
 
-<style>
-  body { 
-    margin: 50px; 
-    font: 19px/1.5 'Helvetica Neue', Arial, sans-serif;
-  }
-  
-  a {
-    color: #088;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  h1, h2 {
-    font-family: "Yanone Kaffeesatz", sans-serif;
-    margin-bottom: 10px;
-  }
-  
-  h1 {
-    font-size: 240%;
-    margin-top: 24px;
-  }
-  
-  h2 {
-    font-size: 180%;
-    margin-top: 18px;
-  }
-  
-  img {
-    border: 0;
-  }
-  
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin-bottom: 10px;
-  }
-
-  table.facts { 
-    margin-bottom: 15px; 
-    background-color: white; 
-  }
-  table.facts td, table.facts th { 
-    border: 1px solid black; 
-    padding: 4px; 
-  }
-  table.facts th { 
-    font-weight: bold; 
-    text-align: right;
-  }
-  
-  table.gallery td {
-    padding: 5px;
-  }  
-  
-  p {
-    margin-bottom: 15px;
-  }
-  
-  .paypal {
-    width: 100px;
-    margin: auto;
-    margin-top: 30px;
-  }
-
-  .center {
-    margin: auto;    
-    width: 800px;
-  }
-  
-  .main {
-    margin: 30px;
-  }
-  
-  .title {
-    margin-bottom: 40px;
-  }
-  
-  .claim {
-    font-style: italic;
-  }
-  
-  .footer {
-    border-top: 1px solid black;
-    margin-top: 50px;
-    padding-top: 10px;
-    font-size: 70%;
-  }
-  
-</style>
 
 </head>
 <body>
@@ -123,38 +45,40 @@
   <img src="images/logo96.jpg">
 </div>
 
-<p>
-  <img src="images/front.jpg" width="800"><br/>
-  <img src="images/back.jpg" width="800">
-</p>
+<div class="claim">
+  A clever little storage server &mdash; designed for 24/7-operation in your living room.
+</div>
 
-<p class="claim">
-  A sexy little storage server &mdash; designed for 24/7-operation in your living room.
-</p>
+<div id="slider">
+  <ul>
+    <li><img src="images/front.jpg" width="800" alt="front side" /></li>
+    <li><img src="images/back.jpg" width="800" alt="back side" /></li>
+  </ul>
+</div>
 
-<div>
+<div class="social">
   <iframe src="http://www.facebook.com/plugins/like.php?href=evercu.be" scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe>
 </div>
-  
+
 
 
 <h1>Background</h1>
 
 <p>
   When I came across the
-  <a href="http://blog.backblaze.com/2009/09/01/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/">Backblaze storage pod</a>, 
-  I was immediately intrigued by its clever, no-frills design. 
-  But who really needs 67 terabytes 
+  <a href="http://blog.backblaze.com/2009/09/01/petabytes-on-a-budget-how-to-build-cheap-cloud-storage/">Backblaze storage pod</a>,
+  I was immediately intrigued by its clever, no-frills design.
+  But who really needs 67 terabytes
   (<a href="http://blog.backblaze.com/2011/07/20/petabytes-on-a-budget-v2-0revealing-more-secrets/">or even 135</a>)
-  at home?
-  I decided to "downscale" this excellent hardware design for home use, and after a long period of experimentation, 
+  at home? <br/>
+  I decided to "downscale" this excellent hardware design for home use, and after a long period of experimentation,
   the Evercube is the final result.
-</p>  
-  
-<p>  
-  The design is open hardware, available under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 
-  Attribution</a> license. 
-  But for your convenience, I am also offering all components needed to build 
+</p>
+
+<p>
+  The design is <a href="http://en.wikipedia.org/wiki/Open-source_hardware">open hardware</a>,
+  available under a <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a> license.
+  But for your convenience, I am also offering all components needed to build
   the Evercube as an easy to assemble Do-It-Yourself kit.
 </p>
 
@@ -169,7 +93,7 @@
   </tr>
   <tr>
     <th>material</th>
-    <td>brushed stainless steel, 2 mm, lasercut</td>
+    <td>stainless steel, 2 mm, brushed</td>
   </tr>
   <tr>
     <th>processor</th>
@@ -177,7 +101,7 @@
   </tr>
   <tr>
     <th>memory</th>
-    <td>512 MB, DDR2</td>
+    <td>512 MB DDR2</td>
   </tr>
   <tr>
     <th>disk slots</th>
@@ -188,8 +112,12 @@
     <td>5 TB</td>
   </tr>
   <tr>
+    <th>network</th>
+    <td>1 x Gbit Ethernet</td>
+  </tr>
+  <tr>
     <th>power</th>
-    <td>20 W (5 VDC, 4 A)</td>
+    <td>20 W &mdash; 5 VDC, 4 A</td>
   </tr>
   <tr>
     <th>cooling</th>
@@ -197,10 +125,10 @@
   </tr>
   <tr>
     <th>kit price</th>
-    <td>€ 429 &mdash; includes 19% VAT</td>
+    <td>€ 429 (includes 19% VAT)</td>
   </tr>
-</table>  
-            
+</table>
+
 
 <h1>Questions & Answers</h1>
 
@@ -211,7 +139,7 @@
 <dt>Why another NAS box? Aren't there enough already?</dt>
 <dd>
   Yeah, there are quite a few &mdash; but do they really look good next to your MacBook Pro?
-  Are they specifically designed for 2.5" disks? 
+  Are they specifically designed for 2.5" disks?
   And are they as compact and energy-efficient as the Evercube?
 </dd>
 
@@ -220,8 +148,8 @@
 <dd>
   The Evercube is primarily intended as an "always-on" home server.
   5 terabytes of raw storage capacity make it a superb file server
-  with plenty of room for pictures, music, movies or backups. 
-  Of course it can also be used as a web server, bittorrent server 
+  with plenty of room for pictures, music, movies or backups.
+  Of course it can also be used as a web server, bittorrent server
   ... or to host your personal <a href="https://joindiaspora.com/">diaspora</a> node?
 </dd>
 
@@ -241,15 +169,15 @@
 <dt>What is included in the kit?</dt>
 <dd>
   The kit contains everything &mdash; except <b>harddisks</b> &mdash; that is needed to build the Evercube:
-  enclosure, motherboard (with onboard CPU and memory), 5-port SATA multiplexer backplane, 
-  internal disk scaffold, ultra-silent fan, power supply, wires, clamps, screws, nuts, washers ... 
+  enclosure, motherboard (with onboard CPU and memory), 5-port SATA multiplexer backplane,
+  internal disk scaffold, ultra-silent fan, power supply, wires, clamps, screws, nuts, washers ...
 </dd>
 
 <dt>How difficult is it to put together?</dt>
 <dd>
   Pretty easy, actually. If you know how to operate a screwdriver, you should be fine ;)
   Special care has been taken to make assembly as simple as possible &mdash; all
-  electrical connections are done with clamps, for example, so <b>no soldering 
+  electrical connections are done with clamps, for example, so <b>no soldering
   is necessary</b>. I'll publish detailed step-by-step instructions soon.
 </dd>
 
@@ -274,14 +202,14 @@
 <dd>
   It might sound strange, but laptop disks actually have a lot of advantages
   for an always-on home server: they use less energy, run very quiet, and take up little space.
-  Although you pay roughly double the price per gigabyte compared to 3.5" disks, 
+  Although you pay roughly double the price per gigabyte compared to 3.5" disks,
   you pay less for electricity, and thus save money in the long run.
 </dd>
 
 <dt>What operating system does the Evercube run on?</dt>
 <dd>
-  The <a href="http://en.wikipedia.org/wiki/SheevaPlug">Sheeva Plug</a> (which we use as motherboard) 
-  comes with Ubuntu 9.04 pre-installed on flash.  
+  The <a href="http://en.wikipedia.org/wiki/SheevaPlug">Sheeva Plug</a> (which we use as motherboard)
+  comes with Ubuntu 9.04 pre-installed on flash.
   You can find instructions on <a href="http://www.plugcomputer.org/plugwiki/index.php/Main_Page">plugcomputer.org</a>
   how to install a different operating system (including Debian, Fedora, Gentoo and FreeBSD).
 </dd>
@@ -294,7 +222,7 @@
 <dt>How about ZFS?</dt>
 <dd>
   Sure, ZFS would be ideal for a file server &mdash; but it is currently not available on Ubuntu.
-  FreeBSD is an option, although the available memory (512 MB) might turn out to be too little 
+  FreeBSD is an option, although the available memory (512 MB) might turn out to be too little
   for good ZFS performance.
 </dd>
 
@@ -334,9 +262,9 @@
 </div>
 
 <div class="footer">
-  The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Evercube hardware design</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tim.lossen.de" property="cc:attributionName" rel="cc:attributionURL">Tim Lossen</a> 
+  The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Evercube hardware design</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tim.lossen.de" property="cc:attributionName" rel="cc:attributionURL">Tim Lossen</a>
   is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.<br/>
-  The Evercube hardware kit is sold by <a href="http://lossenlabs.com">Lossen Labs</a> GmbH, Berlin, VAT Number DE272721721.<br/>
+  The Evercube kit is sold by <a href="http://lossenlabs.com">Lossen Labs</a> GmbH, Hohenstaufenstrasse 65, 10781 Berlin, VAT Number DE272721721.<br/>
   "Evercube" is a registered trademark of Lossen Labs GmbH.
 </div>
 

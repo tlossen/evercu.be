@@ -1,0 +1,111 @@
+body {
+  margin: 50px;
+  font: 19px/1.5 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+  color: #088;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 240%;
+  margin-top: 60px;
+}
+
+h2 {
+  font-size: 180%;
+  margin-top: 30px;
+}
+
+img {
+  border: 0;
+}
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: 10px;
+}
+
+table.facts {
+  margin-bottom: 15px;
+  background-color: white;
+}
+table.facts td, table.facts th {
+  border: 1px solid black;
+  padding: 4px;
+}
+table.facts th {
+  font-weight: bold;
+  text-align: right;
+}
+
+table.gallery td {
+  padding: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.center {
+  margin: auto;
+  width: 800px;
+}
+
+.main {
+  margin: 30px;
+}
+
+.title {
+}
+
+.claim {
+  margin-top: 10px;
+  margin-bottom: 35px;
+  font-style: italic;
+}
+
+.paypal {
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.footer {
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding-top: 10px;
+  font-size: 70%;
+}
+
+/* Easy Slider */
+
+#slider {
+  margin-bottom: 15px;
+}
+
+#slider ul, #slider li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#slider li {
+	/*
+		define width and height of list item (slide)
+		entire slider area will adjust according to the parameters provided here
+	*/
+	width: 800px;
+	height: 679px;
+	overflow: hidden;
+}
