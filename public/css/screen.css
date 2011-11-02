@@ -89,6 +89,10 @@ p {
   font-size: 70%;
 }
 
+.file {
+  font: 19px/1.5 'Courier', fixed;
+}
+
 /* Easy Slider */
 
 #slider {
