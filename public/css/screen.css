@@ -58,7 +58,7 @@ p {
   margin-bottom: 15px;
 }
 
-.center {
+.main_center {
   margin: auto;
   width: 800px;
 }
@@ -87,6 +87,11 @@ p {
   margin-top: 50px;
   padding-top: 10px;
   font-size: 70%;
+}
+
+.footer_logo {
+  width: 100px;
+  margin: auto;
 }
 
 .file {
