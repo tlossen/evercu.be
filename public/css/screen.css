@@ -37,6 +37,11 @@ dd {
   margin-bottom: 10px;
 }
 
+li {
+  margin-left: 30px;
+  list-style: disc;
+}
+
 table.facts {
   margin-bottom: 15px;
   background-color: white;
@@ -80,6 +85,10 @@ p {
   width: 100px;
   margin: auto;
   margin-top: 30px;
+}
+
+.price {
+  font-size: 120%;
 }
 
 .footer {

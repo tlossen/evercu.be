@@ -10,20 +10,20 @@
 <meta property="og:title" content="Evercube" />
 <meta property="og:type" content="product" />
 <meta property="og:url" content="http://evercu.be" />
-<meta property="og:image" content="http://evercu.be/public/images/front.jpg" />
+<meta property="og:image" content="http://s3.amazonaws.com/files.evercu.be/cube_front.jpg" />
 <meta property="og:site_name" content="Evercube" />
 <meta property="fb:admins" content="1220032045" />
 
 <title>Evercube</title>
 
-<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.2.3.min.js"></script>
 <script type="text/javascript" src="js/easy_slider1.7.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
     $("#slider").easySlider({
       auto: true,
       continuous: true,
-      controlsShow:  false,
+      controlsShow: false,
       speed: 800,
       pause: 4500,
     });
@@ -31,8 +31,8 @@
 </script>
 
 <link rel="stylesheet" href="css/reset.css" />
-<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' type='text/css'>
 <link rel="stylesheet" href="css/screen.css" />
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' type='text/css'>
 
 
 </head>
@@ -93,7 +93,6 @@
 </p>
 
 <p>
-  
   For your convenience, I also offer all components needed to build the Evercube
   as an easy to assemble Do-It-Yourself kit.
 </p>
@@ -133,15 +132,11 @@
   </tr>
   <tr>
     <th>power</th>
-    <td>20 W &mdash; 5 VDC, 4 A</td>
+    <td>30 W &mdash; 5 VDC, 6 A</td>
   </tr>
   <tr>
     <th>cooling</th>
     <td>ultra-silent fan, 140 mm</td>
-  </tr>
-  <tr>
-    <th>kit price</th>
-    <td>€ 429 (includes 19% VAT)</td>
   </tr>
 </table>
 
@@ -173,7 +168,7 @@
   with plenty of room for pictures, music, movies or backups.
   Of course it can also be used as your personal web server, bittorrent server,
   <a href="http://freedomboxfoundation.org/learn/">freedom box</a>,
-  <a href="https://joindiaspora.com/">diaspora node</a> ... 
+  <a href="https://joindiaspora.com/">diaspora node</a> ...
 </dd>
 
 <dt>So you live in Belgium?</dt>
@@ -258,52 +253,73 @@
 <dt>When is the kit available?</dt>
 <dd>
   The first batch (ten kits) will be ready for delivery in mid-November 2011.
-  The second batch (another twenty) will probably be ready a few weeks later.
+  The second batch will probably be ready a few weeks later.
   So order <b>now</b> if you want to be sure to receive your kit before Christmas!
-</dd>
-
-<dt>What are the shipping costs?</dt>
-<dd>
-  As a special introductory offer, shipping costs (world-wide) <b>are included</b> for the first ten kits sold.
-  After that, I'll publish with more details.
 </dd>
 
 <dt>How do I order?</dt>
 <dd>
-  Use the PayPal button below. You will receive an order confirmation by email.
+  Use the PayPal buttons below. You will receive an order confirmation by email.
   I will send out the kit (plus printed invoice) as soon as possible.
 </dd>
 
+<dt>What about shipping costs?</dt>
+<dd>
+  As a special introductory offer, shipping costs (world-wide) are <b>included</b> for the first ten kits sold.
+  After that, I'll publish more details.
+</dd>
+
+<dt>What about customs duties?</dt>
+<dd>
+  Depending on where you live, customs duties for commercial goods (electronics)
+  shipped from Germany may apply &mdash; those are not included in the kit
+  price.
+</dd>
+
+<dt>What about value-added tax (VAT)?</dt>
+<dd>
+  You <b>do not</b> have to pay any VAT if you either
+  <ul>
+    <li>live outside the European Union, or</li>
+    <li>are a <b>business</b> outside Germany (= have a European VAT number).</li>
+  </ul>
+  In all other cases the german VAT rate of 19% applies.
+</dd>
+
+
 </dl>
+
 
 <div class="paypal">
   <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="AAFQ62QSF923N">
-    <input type="hidden" name="on0" value="Options">
-    <table>
-      <tr>
-        <td valign="middle">
-          <select name="os0">
-            <option value="Kit">Kit €429,00 EUR</option>
-            <option value="Kit (without SheevaPlug)">Kit (without SheevaPlug) €329,00 EUR</option>
-          </select>
-        </td>
-        <td>&nbsp;&nbsp;</td>
-        <td>
-          <input type="hidden" name="currency_code" value="EUR">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-          <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-        </td>
-      </tr>
-    </table>
+  <table>
+    <tr>
+      <td>
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="AAFQ62QSF923N">
+        <input type="hidden" name="on0" value="Options">
+        <select name="os0">
+          <option value="(regular)">(regular) €429,00 EUR</option>
+          <option value="(no VAT)">(no VAT) €359,00 EUR</option>
+        </select>
+        <input type="hidden" name="currency_code" value="EUR">
+      </td>
+      <td>
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      </td>
+    </tr>
+  </table>
+  <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
   </form>
 </div>
+
+
+
 
 <div class="footer">
   The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Evercube hardware design</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tim.lossen.de" property="cc:attributionName" rel="cc:attributionURL">Tim Lossen</a>
   is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.<br/>
-  The Evercube kit is sold by <a href="http://lossenlabs.com">Lossen Labs</a> GmbH, Hohenstaufenstrasse 65, 10781 Berlin, VAT Number DE272721721.<br/>
+  The Evercube Kit is sold by <a href="http://lossenlabs.com">Lossen Labs</a> GmbH, Hohenstaufenstrasse 65, 10781 Berlin, VAT number DE272721721.<br/>
   "Evercube" is a registered trademark of Lossen Labs.
 </div>
 
