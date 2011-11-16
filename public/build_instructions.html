@@ -1,0 +1,230 @@
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author" content="Tim Lossen" />
+<meta name="robots" content="all" />
+
+<title>Evercube &mdash; Step-by-step Build Instructions</title>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/easy_slider1.7.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#slider").easySlider({
+      auto: true,
+      continuous: true,
+      controlsShow: false,
+      speed: 800,
+      pause: 4500,
+    });
+  });
+</script>
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/screen.css" />
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' type='text/css'>
+
+
+</head>
+<body>
+
+<div class="main_center">
+<div class="main">
+
+<div class="title">
+  <a href="index.html"><img src="images/logo96.jpg"></a>
+</div>
+
+<div class="claim">
+  A smart little storage server &mdash; designed for 24/7-operation in your living room.
+</div>
+
+<h1>Step-by-step Build Instructions</h1>
+
+<h2>Overview</h2>
+
+<ol>
+  <li>1. Preparation
+    <ol>
+      <li>1.1 Fetch necessary tools</li>
+      <li>1.2 Check kit contents</li>
+      <li>1.3 Verify that SheevaPlug is working</li>
+    </ol>
+  </li>
+  <li>2. Mainboard
+    <ol>
+      <li>2.1 Disassemble SheevaPlug</li>
+      <li>2.2 Cut and extend power lines</li>
+      <li>2.3 Install mainboard in enclosure</li>
+    </ol>
+  </li>
+  <li>3. Power
+    <ol>
+      <li>3.1 Splice and install power cable</li>
+      <li>3.2 Hook up mainboard</li>
+    </ol>
+  </li>
+  <li>4. Cooling
+    <ol>
+      <li>4.1 Install fan in enclosure</li>
+      <li>4.2 Hook up fan</li>
+    </ol>
+  </li>
+  <li>5. Disk Scaffold
+    <ol>
+      <li>5.1 Assemble scaffold</li>
+      <li>5.2 Attach cables</li>
+      <li>5.3 Install scaffold in enclosure</li>
+      <li>5.4 Add rubber protectors</li>
+    </ol>
+  </li>
+  <li>6. Startup
+    <ol>
+      <li>6.1 Install disks</li>
+    </ol>
+  </li>
+</ol>
+
+<h2>1. Preparation</h2>
+
+<h3>1.1 Fetch necessary tools</h3>
+
+<p>
+  Make sure that you have the following tools on hand:
+</p>
+
+<ul>
+  <li>large screwdriver (Phillips #2)</li>
+  <li>small screwdriver (Phillips #0)</li>
+  <li>pliers / scissors</li>
+  <li>lighter</li>
+</ul>
+
+
+<h3>1.2 Check kit contents</h3>
+
+<p>
+  Unpack the Evercube kit, and check that all parts are there:
+</p>
+
+<p>
+<ul>
+  <li>main components
+    <ul>
+      <li>stainless-steel enclosure</li>
+      <li>aluminum disk scaffold</li>
+      <li>SheevaPlug</li>
+      <li>5-port SATA backplane</li>
+      <li>140mm fan</li>
+      <li>power supply</li>
+    </ul>
+  </li>
+  <li>cables
+    <ul>
+      <li>power cable (inside SheevaPlug box)</li>
+      <li>miniUSB-to-USB cable (inside SheevaPlug box)</li>
+      <li>2m flat ethernet cable</li>
+      <li>0.5m eSATA-to-SATA cable</li>
+    </ul>
+  </li>
+  <li>small parts
+    <ul>
+      <li>5 plastic wedges (brown)</li>
+      <li>2 Wago power clamps (grey, orange)</li>
+      <li>2 ScotchLok power clamps (transparent, yellow)</li>
+      <li>8 nylon washers (white)</li>
+      <li>4 long screws</li>
+      <li>4 short screws</li>
+      <li>4 screw nuts</li>
+      <li>4 nylon spacers (black)</li>
+      <li>2 power connectors + end caps (red)</li>
+      <li>2 wires</li>
+      <li>heat-shrink tube (black)</li>
+      <li>rubber profile (black)</li>
+      <li>adhesive dots (transparent)</li>
+    </ul>
+  </li>
+</ul>
+</p>
+
+<p>
+  If anything should be missing, please <a href="mailto:tim@evercu.be">contact me</a>.
+</p>
+
+<h3>1.3 Verify that the SheevaPlug is working</h3>
+
+<p>
+  Before we go ahead and void its warranty, let's verify that the SheevaPlug
+  boots up, and that we can connect to it over the serial interface.
+</p>
+
+<p>
+  Plug the SheevaPlug into
+  a power socket and hook it up to your computer via USB. The small end of the included USB cable
+  goes into the miniUSB port on the side of the SheevaPlug.
+  Then follow the <a href="http://www.plugcomputer.org/plugwiki/index.php/Serial_terminal">instructions on plugcomputer.org</a>
+  (for Windows, Linux &amp; Mac) to connect with a suitable terminal program.
+</p>
+
+<p>
+  The default login is <code>root</code> with password <code>nosoup4u</code>. Once you have
+  logged in successfully, you can power off the plug again with <code>shutdown -P now</code>.
+</p>
+
+
+<h2>2. Mainboard</h2>
+
+<p>TBD</p>
+
+<h2>3. Power</h2>
+
+<p>TBD</p>
+
+<h2>4. Cooling</h2>
+
+<p>TBD</p>
+
+<h2>5. Disk Scaffold</h2>
+
+<p>TBD</p>
+
+<h2>6. Startup</h2>
+
+<p>TBD</p>
+
+
+<div class="footer">
+  The <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Evercube hardware design</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://tim.lossen.de" property="cc:attributionName" rel="cc:attributionURL">Tim Lossen</a>
+  is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 License</a>.<br/>
+  The Evercube Kit is sold by <a href="http://lossenlabs.com">Lossen Labs</a> GmbH, Hohenstaufenstrasse 65, 10781 Berlin, VAT number DE272721721.<br/>
+  "Evercube" is a registered trademark of Lossen Labs.
+</div>
+
+<br/>
+<br/>
+
+<div>
+<div class="footer_logo">
+  <a href="http://freedomdefined.org/OSHW"><img src="images/oshw-logo-100-px.png" /></a>
+</div>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2260866-11']);
+  _gaq.push(['_setDomainName', '.evercu.be']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>

@@ -11,7 +11,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Yanone Kaffeesatz", sans-serif;
   margin-bottom: 10px;
 }
@@ -24,6 +24,11 @@ h1 {
 h2 {
   font-size: 180%;
   margin-top: 30px;
+}
+
+h3 {
+  font-size: 150%;
+  margin-top: 10px;
 }
 
 img {
