@@ -37,9 +37,14 @@ dd {
   margin-bottom: 10px;
 }
 
-li {
+ul li {
   margin-left: 30px;
   list-style: disc;
+}
+
+ol li {
+  margin-left: 30px;
+  list-style: none;
 }
 
 table.facts {
